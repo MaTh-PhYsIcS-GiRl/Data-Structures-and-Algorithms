@@ -1,33 +1,56 @@
-import java.util.Enumeration;
-import java.util.Hashtable;
-public class Example2 {
-	
-	public static void main(String[] args)
-	{
-		//Creating the hashtable
-		Hashtable ht = new Hashtable();
-		
-		//putting objects into the hashtable
-		ht.put("David", 1000);	//key, value
-		ht.put("John", 500);
-		ht.put("Emma", 5000);
-		ht.put("Rache", 2500);
-		
-		//Hashtable enumeration example : lists out all of the values in order
-		Enumeration e = ht.elements();
-		while (e.hasMoreElements())
-			System.out.println(e.nextElement());
-		
-		//how to find size of Hashtable in java
-		System.out.println("Size of hashtable : " + ht.size());
-		
-		//does hashtable contain specified object as key
-		System.out.println("Does table contain david as a key : " + 
-							ht.containsKey("David"));
-		
-		//does hashtable contain specified object as a value
-		System.out.println("Does hashtable contain 5000 as a value : " +
-							ht.containsValue(5000));
-	}
+//import java.util.Queue;  
+import java.util.PriorityQueue;
+import java.util.Iterator;
 
-}
+public class Example2
+{  
+	public static void main(String args[]){  
+
+		PriorityQueue<String> queue=new PriorityQueue<String>();  
+
+		queue.add("Deepansha");  
+
+		queue.add("is");  
+
+		queue.add("the");  
+
+		queue.add("most");  
+
+		queue.add("AWESOME person ever!");
+		
+
+		System.out.println("head:"+queue.element());  //HEAD : most recent (latest) element added to the list
+
+		System.out.println("head:"+queue.peek());  //retrieves and returns the head 
+
+		System.out.println("\niterating the queue elements:");  
+
+		
+		Iterator itr = queue.iterator();  
+
+		
+		while(itr.hasNext()){  
+
+			System.out.println(itr.next());  
+
+		}  
+
+		queue.remove();  
+		//.remove() : retrieves and removes the head of this queue.
+
+		queue.poll();  
+		//.poll() : retrieves and removes the head of this queue, or returns null if this queue is empty.
+
+		System.out.println("\nafter removing two elements:");  
+
+		
+		Iterator<String> itr2=queue.iterator();  
+
+		while(itr2.hasNext()){  
+
+			System.out.println(itr2.next());  
+
+		}  
+
+	}  
+}  
