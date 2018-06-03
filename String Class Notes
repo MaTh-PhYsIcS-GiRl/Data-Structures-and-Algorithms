@@ -1,0 +1,14 @@
+String Class Notes
+
+String class - immutable
+once contents of an object are created, they can never be modified
+helps JVM reuse String objects
+reduces memory overhead and increases performance
+can be shared across multiple reference variables
+ 
+final modifier to a String means it can't be reassigned a value
+ 
+all methods in String class don't actually modify the contents, they create and return 
+a new String object!
+
+String concatenation is implemented by StringBuilder or StringBuffer classes behind the scenes

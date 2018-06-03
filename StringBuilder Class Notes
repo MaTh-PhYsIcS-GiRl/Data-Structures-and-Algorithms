@@ -1,0 +1,13 @@
+String Builder Notes
+-mutable
+-dealing with larger strings
+-modifying contents of a string often, instead of creating a new object like String class
+-improves performance of code
+
+String Builder doesn't define method TRIM!
+
+
+String Buffer is same as String Builder, EXCEPT : 
+1. Methods of string buffer are synchronized, whereas methods of string builder aren't
+-->only one thread of multiple threads can executed in StringBuffer unlike String Builder
+2. String buffer is FOR MULTIPLE THREADS, unlike String Builder

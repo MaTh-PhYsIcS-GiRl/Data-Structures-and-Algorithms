@@ -1,0 +1,4 @@
+Array List Notes
+1. When you add an element @ a particular position, an ArrayList creates a new array
+(only if there's enough room left) and inserts all its elements @ positions other than 
+the positions you specified
