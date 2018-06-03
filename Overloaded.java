@@ -3,8 +3,8 @@ public class Overloaded {
 	
 	public static void main(String[] args)
 	{
-		String girl = new String("Shreya");
-		char[] name = new char[] {'P', 'A', 'U', 'L'};
+		String girl = new String("Deepansha");
+		char[] name = new char[] {'D', 'I', 'Y', 'A'};
 		String boy = new String(name);
 		
 		StringBuilder sd1 = new StringBuilder("String Builder");
