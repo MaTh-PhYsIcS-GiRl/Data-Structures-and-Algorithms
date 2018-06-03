@@ -8,7 +8,7 @@ import java.util.*;
 public class Sets1 {
 	public static void main(String[] args)
 	{
-		int[] count = {34, 22, 10, 60, 30, 22};
+		int[] count = {124,14,345, 123,14,152};
 		Set<Integer> set  = new HashSet<Integer>();
 		
 		try {
