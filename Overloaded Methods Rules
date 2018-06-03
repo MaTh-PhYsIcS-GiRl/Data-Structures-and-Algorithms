@@ -1,0 +1,5 @@
+Overloaded Methods Rules
+1. Method parameters are different from one another
+2. May or may not have different return types
+3. May or may not have different access levels
+4. Can't be defined by only changing return type or access motifiers or both
